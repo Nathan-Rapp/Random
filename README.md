@@ -1,6 +1,6 @@
 # Random
 
-This is a Random Number generator written in RAPID, that allows the user to create random integers, floats, uniform (0-1), or gausians (distributed about the mean, with a standard deviation). 
+This is a Random Number Generator Add-in written in RAPID (ABB), that allows the user to create random integers, floats, uniform (0-1), or gausians (distributed about the mean, with a standard deviation). 
 
 it includes: 
 
