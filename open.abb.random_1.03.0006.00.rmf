@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProductManifest version="1.1">
+  <Product id="open.abb.random" name="Random" version="1.03.0006.00" versionName="1.3" creationDate="2023-01-06" publisher="ABB" type="AddIn" copyright="Copyright 2023 ABB. All rights reserved." companyUrl="ABB.com">
+    <Description>Random AddIn</Description>
+  </Product>
+  <Categories>
+    <Category displayName="Random Number Generator" type="system">
+      <Groups>
+        <Group displayName="Include random number generator? ">
+          <FeatureRef id="open.abb.random.norand" />
+          <FeatureRef id="open.abb.random.rand" />
+        </Group>
+      </Groups>
+    </Category>
+  </Categories>
+  <Features>
+    <Feature id="open.abb.random.rand" displayName="Yes. Use Random Module" requiresLicense="false" isDefaultSelected="true" type="system">
+      <FeatureData>
+        <KeyValue id="rand" key="rand" />
+      </FeatureData>
+    </Feature>
+    <Feature id="open.abb.random.norand" displayName="No. Dont use this." requiresLicense="false" type="system">
+      <FeatureData>
+        <KeyValue id="norand" key="norand" />
+      </FeatureData>
+    </Feature>
+  </Features>
+  <Rules>
+    <Dependencies />
+    <Conflicts>
+      <Conflict>
+        <FeatureRef id="open.abb.random.rand" />
+        <FeatureRef id="open.abb.random.norand" />
+      </Conflict>
+    </Conflicts>
+  </Rules>
+  <Packages>
+    <FeatureRef id="open.abb.random.rand">
+      <Package id="open.abb.random_1.03.0006.00.rpk" platform="vc;rc;rcsim" digest="566815B8BD2499448773037757398992AF992CDD" />
+    </FeatureRef>
+    <FeatureRef id="open.abb.random.norand">
+      <Package id="open.abb.random_1.03.0006.00.rpk" platform="vc;rc;rcsim" digest="566815B8BD2499448773037757398992AF992CDD" />
+    </FeatureRef>
+  </Packages>
+</ProductManifest>
